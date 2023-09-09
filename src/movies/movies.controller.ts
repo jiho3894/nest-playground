@@ -24,7 +24,7 @@ export class MoviesController {
   }
 
   @Search('search')
-  search(@Query('year') movieYear) {
+  search(@Query('year') movieYear: number) {
     return `${movieYear}년도 영화를 찾았습니다`;
   }
 
