@@ -8,7 +8,7 @@
   ],
   "headers": [
     {
-      "source": "/movies/(.*)",
+      "source": "/(.*)",
       "headers": [
         {
           "key": "Access-Control-Allow-Origin",
