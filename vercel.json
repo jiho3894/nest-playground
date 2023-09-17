@@ -8,9 +8,20 @@
   ],
   "routes": [
     {
-      "src": "/(.*)",
+      "src": "/movies/(.*)",
       "dest": "src/main.ts",
       "methods": ["GET", "POST", "PUT", "PATCH", "DELETE"]
+    }
+  ],
+  "headers": [
+    {
+      "source": "/movies/(.*)",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ]
     }
   ]
 }
